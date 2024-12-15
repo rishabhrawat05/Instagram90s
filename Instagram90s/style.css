@@ -198,7 +198,7 @@
 .user-story{
     text-align: center;
     line-height: 16px;
-    font-size: 2vh;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
