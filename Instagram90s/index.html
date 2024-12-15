@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/instagram-icon.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="main">
+        <div class="home-page">
+            
+            <div class="header">
+                <h1>Instagram</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." class="input-box">
+                </div>
+                <div class="authentication">
+                    <button class="button">Log In</button>
+                    <button class="button">Sign Up</button>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="message-me" id="message-me">
+                    <div class="message-me-header">
+                        <div class="header-user">
+                            <img src="./assets/sonny.png" id="message-me-image" alt="img">
+                            <p id="message-me-user">sonny</p>
+                        </div>
+                        <div class="cross-icon button" id="close-button">
+                            <i class="ri-close-large-line"></i>
+                        </div>
+                    </div>
+                    <div class="message-me-body">
+                        <img src="./assets/sonny.png" id="message-me-body-image" alt="">
+                        <div class="message-me-box">
+                            <ul id="message-list"></ul>
+                        </div>
+                        
+                    </div>
+                    <div class="message-me-footer">
+                        <input placeholder="Write a message..." class="input-box" id="message-input"></input>
+                        <button class="button" id="send-message">Send</button>
+                    </div>
+                </div>
+                <div class="message">
+                    <h1>Messages</h1>
+                    <div class="users">
+                        <div class="user">
+                           <img src="./assets/sonny.png" class="user-image" alt="img">
+                           <div class="mesg">
+                            <p class="user-name">sonny</p>
+                            <p class="desc">sent an attachment</p>
+                        </div>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/dharma.png" class="user-image" alt="img" >
+                            <div class="mesg">
+                             <p class="user-name">dharma</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/asiqur.png" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">asiqur</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/lillian.png" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">lillian</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/naomi.png" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">naomi</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/eric.png" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">eric</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/ellie.png" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">ellie</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/jackie.webp" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">jackie</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/colin.webp" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">colin</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                         <div class="user">
+                            <img src="./assets/mochi.png" class="user-image" alt="img">
+                            <div class="mesg">
+                             <p class="user-name">mochi</p>
+                             <p class="desc">sent an attachment</p>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="menu-box" id="menu-box">
+                        <div class="menu-box-header message-me-header">
+                            <div class="cross-icon button" id="close-button-menu">
+                                <i class="ri-close-large-line"></i>
+                            </div>
+                        </div>
+                        <div class="menu-box-body">
+                            <p>Report</p>
+                            <p>Not interested</p>
+                            <p>Copy link</p>
+                            <p>About</p>
+                        </div>
+                    </div>
+                    <div class="comment-box" id="comment-box">
+                            <div class="comment-box-header message-me-header">
+                                <p>Comments</p>
+                                <div class="cross-icon button" id="close-button-comment">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                            </div>
+                            <div class="comment-box-body message-me-body">
+                                <div class="comment-message-box">
+                                    <ul id="comment-list"></ul>
+                                </div>
+                            </div>
+                            <div class="comment-box-footer message-me-footer">
+                                <input placeholder="Write a comment..." class="comment-input-box" id="comment-box-input"></input>
+                                <button class="button" id="send-comment">Send</button>
+                            </div>
+                    </div>
+                    <div id="story-box">
+                            <div class="story-box-header message-me-header">
+                                <div class="header-user">
+                                    <img src="./assets/sonny.png" id="story-box-image" alt="img">
+                                    <p id="story-box-user">sonny</p>
+                                </div>
+                                <div class="cross-icon button" id="close-button-story">
+                                    <i class="ri-close-large-line"></i>
+                                </div>
+                            </div>
+                            <div class="story-box-body">
+                                <div class="story-box-post">
+                                    <img src="./assets/sonny90s.png" id="story-box-post-image" alt="">
+                                    <p>Hey! just posted, make sure to leave a like and comment </p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="story">
+                       
+                        <div class="user-story">
+                            <img src="./assets/user.jpg" class="story-image" alt="img">
+                            
+                            <p class="user-story-user">add story</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/sonny.png" class="story-image" alt="img">
+                            <p class="user-story-user">sonny</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/dharma.png" class="story-image" alt="img">
+                            <p class="user-story-user">dharma</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/asiqur.png" class="story-image" alt="img">
+                            <p class="user-story-user">asiqur</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/lillian.png" class="story-image" alt="img">
+                            <p class="user-story-user">lillian</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/naomi.png" class="story-image" alt="img">
+                            <p class="user-story-user">naomi</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/eric.png" class="story-image" alt="img">
+                            <p class="user-story-user">eric</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/ellie.png" class="story-image" alt="img">
+                            <p class="user-story-user">ellie</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/jackie.webp" class="story-image" alt="img">
+                            <p class="user-story-user">jackie</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/colin.webp" class="story-image" alt="img">
+                            <p class="user-story-user">colin</p>
+                        </div>
+                        <div class="user-story">
+                            <img src="./assets/mochi.png" class="story-image" alt="img">
+                            <p class="user-story-user">mochi</p>
+                        </div>
+                        
+                    </div>
+                    <div class="user-posts" id="user-posts">
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/user.jpg" alt="">
+                                    <p>user</p>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/add.png" class="post-image-90" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">user</p>
+                                    <p class="post-desc" >Add caption</p>
+                                </div>
+                                
+                            </div>
+                            <div class="post-footer">
+                                <p class="button">Add Post</p>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/sonny.png" alt="">
+                                    <p>sonny</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/sonny90s.png" class="post-image-90" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">sonny</p>
+                                    <p class="post-desc">Hey! I got something from my cabinet</p>
+                                </div>
+                                
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">11</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/dharma.png" alt="">
+                                    <p>dharma</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/dharma90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">dharma</p>
+                                    <p class="post-desc">Hey! I stumbled upon some pictures in my parents' storage </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">16</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/asiqur.png" alt="">
+                                    <p>asiqur</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/asiqur90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">asiqur</p>
+                                    <p class="post-desc">Hey! I was going through some old photo prints I had tucked away </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">13</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/lillian.png" alt="">
+                                    <p>lillian</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/lillian90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">lillian</p>
+                                    <p class="post-desc">Hey! Guess what? I found an envelope of printed photos tucked inside an old book </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">19</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/naomi.png" alt="">
+                                    <p>naomi</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/naomi90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">naomi</p>
+                                    <p class="post-desc">Hey! I found some pictures in a dusty drawer </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">14</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/eric.png" alt="">
+                                    <p>eric</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/eric90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">eric</p>
+                                    <p class="post-desc">Hey! I found something in an old box from the attic </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">18</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/ellie.png" alt="">
+                                    <p>ellie</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/ellie90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">ellie</p>
+                                    <p class="post-desc">Hey! I got something from my journal</p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">15</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/jackie.webp" alt="">
+                                    <p>jackie</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/jackie90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">jackie</p>
+                                    <p class="post-desc">Hey! I got something from my old camera bag </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">13</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/colin.webp" alt="">
+                                    <p>colin</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/colin90s.png" class="post-image-90"  alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">colin</p>
+                                    <p class="post-desc">Hey! Just dug up an old album and came across some photos that made me smile </p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">12</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                        <div class="user-post">
+                            <div class="post-header">
+                                <div class="post-username">
+                                    <img class="post-user  user-image" src="./assets/mochi.png" alt="">
+                                    <p>mochi</p>
+                                </div>
+                                <div class="button menu-icon">
+                                    <i class="ri-menu-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-body">
+                                <div class="post-image">
+                                    <img src="./assets/mochi90s.png" class="post-image-90" alt="">
+                                </div>
+                                <div class="post-content">
+                                    <p class="post-user">mochi</p>
+                                    <p class="post-desc">meow moew!!</p>
+                                </div>
+                            </div>
+                            <div class="post-footer">
+                                <div class="user-image like"></div>
+                                <p class="like-count">12</p>
+                                <div class="user-image comment"></div>
+                                <div class="user-image share"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
