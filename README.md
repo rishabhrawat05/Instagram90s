@@ -48,10 +48,17 @@ $ git clone https://github.com/yourusername/instagram-90s-edition.git
 ## Screenshots
 
 ### Home Page
-![Home Page](./images/homepage.png)
+![Screenshot 2024-12-15 134124](https://github.com/user-attachments/assets/e282e08a-f464-4c70-8052-dba41e6298ff)
+
 
 ### Messages Section
-![Messages](./images/messages.png)
+![image](https://github.com/user-attachments/assets/830effbb-0887-4cd6-98ca-57b358bb8cae)
+
+### Comment Section
+![image](https://github.com/user-attachments/assets/62ca3b9d-8e95-435d-bdfe-d2a43e801939)
+
+### Story Section
+![image](https://github.com/user-attachments/assets/9c86ac13-969e-470f-9f1d-084418f65219)
 
 ---
 
